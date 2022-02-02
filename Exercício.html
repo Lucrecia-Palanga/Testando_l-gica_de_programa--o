@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        // Exercício nº 1
+        let number = prompt("Digita um número inteiro");
+        alert("O número digitado foi"+ number);
+       
+        // Exercício nº 2
+        let number1= Number(prompt("Digita um número inteiro"));
+        let number2 = Number(prompt("Agora digita outro número inteiro"));
+        const adição = (number1)+  (number2);
+        const sub = (number1 - number2);
+        const div = (number1 / number2);
+        const mult = (number1 * number2);
+        alert( "A adição dos números é"+ adição +"A subtração dos números é"+ sub +"A multiplicação dos números é"+ mult +"A divisão dos números é"+ div);
+           
+        //Exercício nº3
+           let number1= Number(prompt("Digita um número"));
+           let number2 = Number(prompt("Agora digita outro número"));
+             if(number1== number2){
+                 alert("Os números são iguais!")
+             }else{
+                 alert("Os números são diferentes!")
+             }
+    
+        // Exercício nº 4
+        let name = String(prompt("Qual é o teu nome"));
+         if(name = !NaN){
+                   alert("Escreva corretamente o teu nome!")
+         }else{
+               let anoNascimento = Number(prompt("Em que ano nasceste?"));
+               let anoActual = Number(2021);
+                  if(anoNascimento > anoActual){
+                       alert("Ainda não nasceste! Confirme o ano de nascimento")
+                 }else{
+                     let idade = Number((anoActual)-(anoNascimento));
+                     alert(name+"tens"+ idade+ "anos de idade!");
+                  }
+             }*
+             
+             // Exercício nº5
+             let name = String(prompt("Qual é o teu nome"));
+         
+               let idade= Number(prompt("Quantos anos de idade tens?"));
+               let anoActual = Number(2021);
+                  if(idade > anoActual){
+                       alert("Não é possível!")
+                 }else{
+                     let anoNascimento= Number((anoActual)-(idade));
+                     alert(name+"tens"+ idade+ "anos de idade quer dizer que foste nascida em"+ anoNascimento);
+                  } 
+                  //Exercício nº 6
+                  let number1= Number(prompt("Digita um número"));
+           let number2 = Number(prompt("Agora digita outro número"));
+             if(number1 != number2){
+                 alert("Os números são diferent!")
+             }else{
+                 alert("Os números são iguais!")
+             }
+             // Exercício nº 7
+                let maior = Number(prompt("Digita um número"));
+                let menor = Number(prompt("Digita outro número"));
+                if (menor < maior) {
+                   alert("O número maior é"+maior);
+                }
+                else {
+                    alert("O número maior é"+menor);
+                }if (maior == menor){
+                    alert("os números são iguais");
+                }
+
+            //Exercício nº 8
+            let aluno = prompt("Nome do aluno");
+            let nota1 = Number(prompt("Resultado da 1º prova"));
+            let nota2 = Number(prompt("Resultado da 2º prova"));
+            let média = ((nota1)+(nota2))/2;
+              if(média>=10){
+                  alert(aluno+"apto com"+ média+"valores!");
+              } else{
+                alert(aluno+"Reprovado com"+ média+ "valores!");
+
+              }
+            
+              //Exercício nº 9
+              let number = Number(prompt("Escreva um número"));
+                if(100<=number && number<=200){
+                    alert("O número está no intervalo de 100 à 200!")
+                }else{
+                    alert("O número não está no intervalo de 100 à 200!")
+                }
+
+                //Exercício nº 10
+              let number = Number(prompt("Escreva um número"));
+                if(number % 2 == 0 ){
+                    alert("O número é par!")
+                }else{
+                    alert("O número é impar!")
+                }
+
+                 //Exercício nº 11 - Faça um programa que recebe um número e diga se está no intervalo de 1 á 12 e deve ser diferente de 8 ou nove.
+              let number = Number(prompt("Escreva um número"));
+                if(8 == number || number == 9 ){
+                    alert(" Escreva número diferente de 8 e 9!")
+                }else if(number>0 && number<= 12){
+                    alert("O número  está no intervalo de 1 á 12!")
+                }
+                  
+                //Exercício nº 12 - Construa um programa que determina o consumo médio de um automóvel, sendo fornecida a distancia total percorrida pelo automóvel e o total de combustível gasto.
+              var DistanciaTotal = Number(prompt("Escreva á distancia total percorrida pelo automóvei"));
+              var Total_Combustível = Number(prompt("Escreva o total de combustível gasto"));
+              var Consumo_medio = DistanciaTotal/Total_Combustível
+              alert("O consumo médio do automóvel é de"+ Consumo_medio+"KM/L!");
+                
+                //Exercício nº 13 - Construa um programa que recebe três nomes, e verifica se são iguais.
+              var Nome1 = String(prompt("Escreva um nome"));
+              var Nome2 = String(prompt("Escreva outro"));
+              var Nome3 = String(prompt("Escreva mais outro!"));
+
+                if(Nome1 == Nome2 && Nome2 == Nome3){
+                    alert("Os três nomes são iguais")
+                }else{
+                   alert("Os nomes são diferentes!");
+                    
+                } 
+                
+                //Exercício nº 14 - Construa um programa que dado o nome de alguém diga quantas letras tem este nome.
+                var nome = String(prompt("Escreva qualquer nome"));
+              alert("O nome digitado tem"+ nome.length +"letras!"); 
+
+              // Exercício 15 
+              
+              Em 2014 no instituto politecnico do cazenga (ISPOCA), na sala 208, tem um problema de como as eleiçõens
+              do delegado da turma deve ocorrer. Para resolver o problema o Profrssor: Quitumba, pedio para criar um 
+              programa que solicita o voto do eleitor e exibe o nome do candidato votado. O número identifica o 
+              candidato votado caso o número não existir o voto será nulo, apresenta um menum com os nomes dos 
+              candidatos a serem votados.
+            
+             
+            let candidatos = ["Shaban","MenesesCirilo","EusebiodeSousa","Binga","Dorivaldo"];
+            alert(" Os candidatos são: "+"Shaban na posição 0 "+"MenesesCirilo na posição 1 "+"EusebiodeSousa na posição 2 "+"Binga na posição 3 "+"Dorivaldo na posição 4 ");
+            let opção1 = Number(prompt("Digita a posição do 1º candidato !"));
+            let nºeleitores1 = Number(prompt("quantos votaram em "+candidatos[opção1]));
+            let opção2 = Number(prompt("Digita a posição do 2º candidato !"));
+            let nºeleitores2 = Number(prompt("quantos votaram em "+candidatos[opção2]));
+            let opção3 = Number(prompt("Digita a posição do 3º candidato !"));
+            let nºeleitores3 = Number(prompt("quantos votaram em "+candidatos[opção3]));
+            let opção4 = Number(prompt("Digita a posição do 4º candidato !"));
+            let nºeleitores4 = Number(prompt("quantos votaram em "+candidatos[opção4]));
+            let opção5 = Number(prompt("Digita a posição do 5º candidato !"));
+            let nºeleitores5 = Number(prompt("quantos votaram em "+candidatos[opção5]));
+            var vencedor = alert("o maior voto foi "+ Math.max(nºeleitores1,nºeleitores2,nºeleitores3,nºeleitores4,nºeleitores5));
+            alert(nºeleitores1+" votaram em "+candidatos[opção1]+nºeleitores2+" votaram em "+candidatos[opção2]+nºeleitores3+" votaram em "+candidatos[opção3]+nºeleitores4+" votaram em "+candidatos[opção4]+nºeleitores5+" votaram em "+candidatos[opção5]);
+
+
+              //Exercício 16 
+               
+              Escreva um programa que leia dois valores para as variaveis A e B efectua a troca dos valores de forma
+              que a variável A passa a ter o valor da variável B e visse-versa. Apresente os valores trocados
+              
+              var A = Number(prompt("digite o valor de A"));
+              var B =  Number(prompt("digite o valor B"));
+              var mediador = A;
+              A = B;
+              B = mediador;
+              alert(" O valor de A é "+A+ " O balor de B é "+B);
+
+               
+              // Exercício 17
+              
+              // Lêr a temperatura em graus cº e apresentá-la convertida em  fahrenheit a forma de converter é:
+              //F= (9*c+160)/5, sendo F a temperatura fahrenheit e c celcios
+
+               let temperaturacº = prompt("Digite temperactura em grau cº!")   
+               let temperaturafº = (9*temperaturacº + 160)/5;
+               alert("A temperatura convertida é de "+ temperaturafº+" fahrenheit!");
+             
+              // Exercício 18 Ecreve um programa que calcule uma equação do 2º 
+                let a = Number(prompt("Dado a equação axº + bx + c = o digite o valor de a"));
+                let b = Number(prompt("Dado a equação axº + bx + c = o digite o valor de b"));
+                let c = Number(prompt("Dado a equação axº + bx + c = o digite o valor de c"));
+                var delta = (b*b - 4 * a * c);
+                alert("delta é = "+delta);
+
+                if(delta < 0){
+                  alert("Não existe raízes");
+                } 
+                if(delta > 0){
+                  let x1 = (-b + Math.sqrt(delta))/ (2 * a);
+                  let x2 = (-b - Math.sqrt(delta))/ (2 * a);
+                 alert("As raízes são: X1= "+x1+" X2= "+x2);
+                }else{
+                   let r = (-b) / (2*a);
+                   alert("A raís da equação é = "+r);
+                }
+
+                alert("O valor de x1 é"+ x1+"e o de x2 é"+x2);
+              
+              // Exercício 19 Elabore um  programa que faz o câmbio em kwanza de um valor lido em dolar
+              
+               let dolar = Number(prompt("Digita o valor de 1SD em Kwanzas!"));
+               let valor = Number(prompt("Digita o valor em SD que pretendes converter em Kwz."));
+               let valorconvertido = (valor * dolar)/ 1;
+                 alert(valor+"SD corresponde á "+valorconvertido+" Kz");
+              /*
+              // Exercício 20 construa um programa que recebe um valor que foi depositado e exiba o valor com rendimento apos um mês.Considere fixo da poupança em 0,70%
+                   
+                     let valorDepositado = Number("Digita a quantia que pretende depositar!");
+                     let valorrendido = valorDepositado
+                     alrt("Após um mes o valr com o rendimento será "+valorrendido);
+                   
+              // Exercício 21 Comnstrua um programa que mostra o teu nome 10 vezes no ecrã.
+                      
+                         let teunome = prompt("Digita o teu nome!");
+                         let saida = "";
+                           for(let linha = 0; linha < 2; linha ++){
+                             for (let digitos = 0; digitos < 10; digitos ++) {
+                                if((linha + digitos) % 2 == 0){
+                                    saida += teunome;
+                                  } else {
+                                       saida += " "
+                                          }
+                               }
+                                     saida += "\n";
+                              }
+                            alert(saida);
+                       
+                        
+              // Exercício 22 Construa um programa que mostre os números naturais impares de 1 á 100.
+                 
+            for( numero = 0; numero <=100; numero ++){
+                if(numero % 2 != 0){
+                    console.log(numero +"impar")}
+            }
+              // Exercício 23 Construa um programa que mostre todos os números naturais impare de 1 á 100
+              
+              for( numero = 0; numero <=100; numero ++){
+                if(numero % 2 != 0){
+                  console.log(numero+" impar");
+                } 
+            }
+              // Exercício 28 Faça um programa que recebe N números e informe os positivos ou negativos ou o 0 para cada número.
+               
+              var numero = Number(prompt("Digita um número"));
+              
+              if(){
+                alerte(numero + "é um número negativo");
+              }else if(numero == 0){
+                alert(numero+" é um número neutro")
+              }else{
+                alert(numero + " é um número positivo");
+              }
+              
+              // Exercício 29 Faça um programa que recebe dois números e escolhe a opção de (+), (-), (*) ou (/). O programa só deve executar uma das operações.
+              var n1 = Number(prompt("Digita um número"));
+              var n2 = Number(prompt("Digita outro número"));
+              var adição = n1+n2;
+              var subtração = n1-n2;
+              var multiplicação = n1*n2;
+              var divisão = n1/n2;
+              alert("Que operação deseja realizar?"+"   Adição,subtração,multiplicação ou divisão?");
+              switch (prompt("digita opção desejada!")){
+                     case "adição":
+                     alert("O resultado da adição é"+ adição);
+                     break;
+                     case "subtração":
+                     alert("O resultado da subtração é"+ subtração);
+                     case "multiplicação":
+                  alert("O resultado da multiplicação é"+ multiplicação);
+                     break;
+                     case "divisão":
+                     alert("O resultado da divisão é"+ divisão);
+                     break;
+                    }
+              
+              // Exercício 30 Faça um programa que leia um número e 1 á 9 e escreva por por extenso, caso o usuário digite um número que esteja neste intervalo exiba a mensagen "O número não está no intervalo ou número inválido". 
+              switch (prompt("Digite um número no intervalo de 1 á 9")) {
+                     case "1":
+                     alert("O número é um!");
+                     break;
+                     case "2":
+                     alert("O número é dois!");
+                     case "3":
+                  alert("O número é três!");
+                     break;
+                     case "4":
+                     alert("O número é quatro!");
+                     break;
+                     case "5":
+                     alert("O número é cinco!");
+                     break;
+                     case "6":
+                     alert("O número é seis!");
+                     break;
+                     case "7":
+                     alert("O número é sete!");
+                     break;
+                     case "8":
+                     alert("O número é oito!");
+                     break;
+                     case "9":
+                     alert("O número é nove!");
+                     break;
+                     default:
+                     alert("O número não está no intervalo !");
+                     break;
+                    }
+                    
+              // Exercício 31 Escreva um programa que receba um número no intervalo de 1 á 7, e diga se corresponde a que dia de semana.
+
+               switch (prompt("Digite um número no intervalo de 1 á 7")) {
+                     case "1":
+                     alert("O número 1 coresponde a Domingo o 1º dia da semana!");
+                     break;
+                     case "2":
+                     alert("O número 2 coresponde a Segunda-feira o 2º dia da semana!");
+                     case "3":
+                  alert("O número 3 coresponde a Terça-feira o 3º dia da semana!");
+                     break;
+                     case "4":
+                     alert("O número 4 coresponde a Quarta-feira o 4º dia da semana!");
+                     break;
+                     case "5":
+                     alert("O número 5 coresponde a Quinta-feira o 5º dia da semana!");
+                     break;
+                     case "6":
+                     alert("O número 6 coresponde a Sexta-feira o 6º dia da semana!");
+                     break;
+                     case "7":
+                     alert("O número 7 coresponde a Sabado o 7º dia da semana!");
+                     break;
+                     default:
+                     alert("O número não está no intervalo e nem corresponde a nenhum dia de semana!");
+                     break;
+                    }
+          
+              // Exercício 32 Escreva um programa que verifica o crescimento de uma pessoa determinando a idade se é um bebe, criança, adolescente, jovem, senhor ou idoso.
+              var nascimento = Number(prompt("Digita ano de nascimento"));
+              var actualidade = Number(prompt("Digita ano actual"));
+              var idade = (actualidade - nascimento);
+                    if(idade < 6){
+                      alert("Tens "+ idade+" anos de idade ainda es um bebê!");
+                    }
+                    else if(idade >= 6 && idade <= 11){
+                      alert("Tens "+ idade+" anos de idade  es um(a) criança!");
+                    } 
+                    else if ( idade > 11 && idade < 18){
+                      alert("Tens "+ idade+" anos de idade  es um(a) adolescente!");
+                     }
+                     else if ( idade>= 18 && idade < 40){
+                        alert("Tens "+ idade+" anos de idade  es um(a) jovem!");
+                     } 
+                     else if (idade >= 40 && idade < 55){
+                          alert("Tens "+ idade+" anos de idade  es um(a) senhor(a)!");
+                     }
+                     else if (55 <= idade ){
+                        alert("Tens "+ idade+" de idade  es um(a) idoso(a)!");
+                     }
+                  
+              */
+            
+             /* Exercícios dado como tarefa por um dos meus professores*/
+    </script>
+</body>
+</html>
